@@ -1,1 +1,36 @@
 /*  your css code here. If applicable */
+ /* Create a container for the grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 100px); 
+            gap: 5px; 
+        }
+
+       
+        .grid-item {
+            background-color: green;
+			color:white;
+            text-align: center;
+            padding: 10px;
+        }
+#a{
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+#b{
+	grid-row-start: 2;
+	grid-row-end: 6;
+}
+#c{
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+#d{
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+#e{
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
